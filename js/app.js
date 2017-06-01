@@ -38,7 +38,18 @@
  */
 
 (function modal(){
-  var traerGaleria =
+  var traerGaleria = Array.from(document.getElementsByClassName("img-galeria"));
+  var modal = document.getElementById("cajamodal");
+
+  var bodyModal, close, img;
+  traerGaleria.forEach(function(galeria){
+    box.addEventListener("click", function(){
+      modal.innerHTML = "";
+      bodyModal = document.createElement("div");
+      bodyModal.classList.add("modal-body");
+      bodyModal.innerHTML = box.innerHTML;
+    })
+  })
 })
 
  
