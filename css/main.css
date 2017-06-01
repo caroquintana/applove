@@ -89,7 +89,7 @@ header{
   display: inline-block;
   font-size: 14px;
 }
-
+/*SERVICE*/
 #service{
   background-color: #F17C72;
   text-align: center;
@@ -114,4 +114,60 @@ footer{
   background-color: #373b47;
   color: white;
   padding-top: 7px;
+}
+/*WORK*/
+#work{
+  text-align: center;
+  color: #373b47;
+  padding: 70px 7px;
+}
+
+.text-work{
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.modal-open{
+   position: fixed;
+   background: rgba(0,0,0,.8);
+   top: 0;
+   left: 0;
+   width: 100%;
+   min-height: 100vh;
+   transition: .4s linear;
+}
+
+.modal-open .slider{
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.modal-open img{
+   width: 80%;
+   max-height: 500px;
+   border-radius: 5px;
+   box-shadow: none;
+   border: 2px solid #ddd;
+   transition: .4s linear;
+}
+
+.modal-open .boton{
+   display: initial;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   height: 28px;
+   width: 35px;
+   background: transparent;
+   border: 1px solid white;
+   border-radius: 10px 0;
+   color: white;
+}
+.modal-open .boton:hover{
+   background: #eee;
+   color: #000;
 }
